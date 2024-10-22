@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Sets character encoding and viewport for responsiveness -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Links the external CSS file -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Page title -->
+    <title>Resume</title>
+</head>
+
+<body>
+    <!-- Navigation bar -->
+    <nav class="main">
+        <div class="hhh">
+            <h1>My Resume</h1>
+        </div>
+        <div class="nvm">
+            <ul class="navm">
+                <!-- Links to different sections of the page -->
+                <li><a href="">Home</a></li>
+                <li><a class="scroll-link" href="#skill">Skills</a></li>
+                <li><a class="scroll-link" href="#education">Education</a></li>
+                <li><a class="scroll-link" href="#education">Portfolio</a></li>
+                <li><a class="scroll-link" href="#contacts">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main content section with profile picture and intro -->
+    <div class="content">
+        <img src="/img/profile.jpg" alt="">
+        <div class="pa">
+            <!-- Personal introduction -->
+            <p class="p1"> Hi,</p>
+            <div class="p2">
+                <p>I'm Credo Desparvis Gutabarwa, an aspiring Software Engineer based in Kigali, Rwanda. 
+                    I'm passionate about creating digital solutions to solve existing problems in the African society and globally.
+                </p>
+                <!-- Scroll link to skills section -->
+                <a class="scroll-link" href="#skill"><img src="/icn/down.png" alt=""></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Skills section -->
+    <section id="skill">
+        <div class="skills">
+            <div class="heads">
+                <h2 class="hh2">SKILLS</h2>
+            </div>
+            <div class="things">
+                <!-- Front-end skills -->
+                <div class="div1">
+                    <h3>Front-End Skills</h3>
+                    <ul class="s1">
+                        <!-- Skills represented with icons -->
+                        <li><img class="icon1" src="icn/63767.png" alt=""></li>
+                        <li><img class="icon1" src="icn/5968305.png"></li>
+                        <li><img class="icon1" src="icn/js.png" alt=""></li>
+                    </ul>
+                </div>
+                <!-- Back-end and database skills -->
+                <div class="div2">
+                    <h3>Back-End & Database Skills</h3>
+                    <ul class="s1">
+                        <li><img class="icon1" src="/icn/php.png" alt=""></li>
+                        <li><img class="icon1" src="icn/sql.png" alt=""></li>
+                    </ul>
+                </div>
+                <!-- Language proficiency -->
+                <div class="div3">
+                    <h3>Languages</h3>
+                    <ul class="s1">
+                        <li class="lang">English</li>
+                        <li class="lang">Kinyarwanda</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Other skills like video editing and graphic design -->
+            <div>
+                <h2 class="hh2">OTHER SKILLS</h2>
+                <ul class="ss2">
+                    <li>
+                        <p class="fo">Video Editing: Familiar with Wondershare Filmora. <br>
+                            Graphic Design: Proficient in Canva.
+                        </p>
+                    </li>
+                </ul>
+            </div> 
+        </div>
+    </section>
+
+    <!-- Education and portfolio section -->
+    <section id="education">
+        <div class="edp">
+            <!-- Education history -->
+            <div class="edu">
+                <h2 class="hh2">EDUCATION</h2>
+                <ul class="ss2">
+                    <p class="fo">Highschool: SOS Technical Highschool, Software Development.<br>
+                        University: African Leadership University, Year 1.
+                    </p>
+                </ul>
+            </div>
+            <!-- Portfolio section with GitHub link -->
+            <div class="port">
+                <h2 class="hh2">PORTFOLIO</h2>
+                <p class="fi">
+                    You can check out all my recent work on GitHub.<br>
+                    <a href="https://github.com/desparvis" target="_blank"> Link to git >> </a>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact section -->
+    <section id="contacts">
+        <footer id="contact">
+            <div class="footer-container">
+                <h2>CONTACT ME</h2>
+                <!-- Contact form for email -->
+                <p>If you want to contact me, enter your email:</p>
+                <form id="emailForm" action="mailto:credogutabarwa@gmail.com" method="get" enctype="text/plain">
+                    <input type="email" id="emailInput" name="email" placeholder="Enter your email" required>
+                    <span id="error" style="color: red; display: none;">Please enter a valid email address.</span>
+                    <br><br>
+                    <input type="submit" value="Send Email">
+                </form>
+                <!-- Other contact details -->
+                <ul class="contact-list">
+                    <li>Phone: +250-787-362178</li>
+                    <li><a href="https://www.linkedin.com/in/credo-desparvis-gutabarwa-5b4152239/" target="_blank">LinkedIn</a></li>
+                </ul>
+            </div>
+            <!-- Footer section -->
+            <div>
+                <p class="pfoot">&copy; 2024 Credo Desparvis Gutabarwa. All rights reserved.</p>
+            </div>
+        </footer>
+    </section>
+
+    <!-- External script file -->
+    <script src="script.js"></script>
+</body>
+
+</html>
